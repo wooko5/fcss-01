@@ -1,0 +1,96 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# ======================
+# OS 관련 임시 파일
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# IDE 설정 관련
+# ======================
+.idea/             # IntelliJ 프로젝트 설정
+*.iml              # IntelliJ 모듈 설정 파일
+
+
+# ======================
+# 빌드 결과물
+# ======================
+build/             # Gradle 빌드 결과
+out/               # Java 기본 출력 디렉터리
+.gradle/           # Gradle 캐시
+!gradle-wrapper.jar  # gradle/wrapper 폴더 내 jar는 보존
+**/target/         # 혹시 Maven도 병행할 경우
+
+# ======================
+# 환경 설정 파일
+# ======================
+*.log              # 로그 파일
+*.pid              # Process ID
+*.tmp              # 임시 파일
+
+# Spring Boot 환경 프로퍼티
+application-*.yml
+application-*.properties
+.env
+
+# 예외: 샘플/템플릿 설정 파일은 포함
+!application-example.yml
+!.env.example
+
+# ======================
+# 자바 관련
+# ======================
+*.class
+
+# ======================
+# 테스트 관련
+# ======================
+test-output/
+jacoco.exec
+
+# ======================
+# 보안/인증 키
+# ======================
+*.jks
+*.p12
+*.pem
+*.crt
+*.key
+*.keystore
