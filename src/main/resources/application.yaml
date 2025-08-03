@@ -8,3 +8,22 @@ server:
 spring:
   application:
     name: fcss-01
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring
+    username: root
+    password: admin
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: create-drop
+  sql:
+    init:
+      mode: always
+      data-locations: classpath:data/data.sql
+      schema-locations: classpath:data/schema.sql
+logging:
+  level:
+    root: debug
